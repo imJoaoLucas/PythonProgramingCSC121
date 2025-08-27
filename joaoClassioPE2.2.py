@@ -1,0 +1,55 @@
+import turtle
+
+turtle.pensize(3)
+#I decided to start on (-300,0) to have more space for the next drawing
+turtle.penup()
+turtle.goto(-300,0)
+turtle.pendown()
+#First Drawing 
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.goto(-300+100,0)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.goto(-300,100)
+turtle.goto(-300,0)
+turtle.left(135)
+#Pythagoras law to draw the hypotenuse correctly 
+turtle.forward(((100**2) + (100**2))**0.5) 
+turtle.left(45)
+turtle.forward(100)
+turtle.left(135)
+turtle.goto(-300+100,0)
+turtle.right(45)
+turtle.forward(100)
+turtle.right(135)
+turtle.forward(((100**2) + (100**2))**0.5)
+
+#Second drawing
+turtle.penup()
+turtle.goto(100,-100)
+turtle.pendown()
+turtle.setheading(0)
+turtle.forward(200)
+turtle.goto(200,100)
+turtle.goto(100,-100)
+
+#Internal Triangle
+turtle.fillcolor('gray')
+turtle.begin_fill()
+turtle.goto(200,0)
+turtle.goto(300,-100)
+turtle.goto(100,-100)
+turtle.end_fill()
+
+turtle.done()
